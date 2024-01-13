@@ -23,8 +23,16 @@ gcloud run deploy dont-make-me-run-service     # From the server directory
 
 # Run Locally
 
+Need node version > 20
+
 ```bash
-npm start
+npm run start
+```
+
+# Run Prod
+
+```bash
+npm run start_production
 ```
 
 # Oauth Flow

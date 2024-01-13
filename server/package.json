@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node --env-file=.env app.js"
+    "start": "node --env-file=.env app.js",
+    "start_production": "NODE_ENV=production node --env-file=.env app.js"
   },
   "author": "",
   "license": "ISC",
