@@ -13,14 +13,6 @@ To generate new `dist`:
 npm run build
 ```
 
-TODO: automate the above.
-
-Deployed on Google Cloud Run
-
-```bash
-gcloud run deploy dont-make-me-run-service     # From the server directory
-```
-
 # Run Locally
 
 Need node version > 20
@@ -35,8 +27,15 @@ npm run start
 npm run start_production
 ```
 
+# Run just the UI
+
+```bash
+npm run build
+npm run dev
+```
+
 # Oauth Flow
 
 https://g.co/bard/share/3163f00555d9
 
-# Deployment Options
+

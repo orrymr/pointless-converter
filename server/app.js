@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 const port = process.env.PORT || 80;
-const host = process.env.HOST || "localhost";
+const host = (process.env.HOST || "localhost") + ":" + port;
 const client_id = process.env.CLIENT_ID;
 const client_secret = process.env.CLIENT_SECRET;
 
@@ -13,10 +13,11 @@ app.get("/exchange_token", (req, res) => {
 
   getAuthJSON(code).then((json) => {
     res.redirect(`http://${host}/?token=${json.access_token}`);
-    // TODO: probably not the best to have the access token
-    //       in the URL params (https://g.co/bard/share/f9adf9105f22)
   });
-  // TODO: Check for the correct scopes.
+});
+
+app.get("/wtf", (req, res) => {
+  res.send('Hello World!')
 });
 
 async function getAuthJSON(code) {
