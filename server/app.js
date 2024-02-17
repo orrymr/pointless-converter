@@ -12,7 +12,7 @@ app.get("/exchange_token", (req, res) => {
   const code = queryParams.code;
 
   getAuthJSON(code).then((json) => {
-    res.redirect(`https://${host}/?token=${json.access_token}`);
+    res.redirect(`https://${process.env.HOST}/?token=${json.access_token}`);
   });
 });
 
