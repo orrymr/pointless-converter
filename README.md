@@ -24,8 +24,10 @@ npm run start
 # Run Prod
 
 ```bash
-npm run start_production
+$ npm run start_production
+$ nohup npm run start_production &
 ```
+
 
 # Run just the UI
 
