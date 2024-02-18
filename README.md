@@ -27,6 +27,19 @@ npm run start
 $ npm run start_production
 ```
 
+Well, the above doesn't work so well, so I started using Forever.
+
+```bash
+npm install -g forever
+```
+
+Then, from the server dir:
+
+```bash
+NODE_ENV=production CLIENT_ID=<ID> CLIENT_SECRET=<SECRET> PORT=<PORT> HOST=<HOST> forever start app.js
+```
+
+So far the app hasn't crashed, so 🤷 .
 
 # Run just the UI
 
