@@ -25,7 +25,6 @@ npm run start
 
 ```bash
 $ npm run start_production
-$ nohup npm run start_production &
 ```
 
 
